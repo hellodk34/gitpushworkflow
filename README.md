@@ -107,5 +107,6 @@ the end of the workflow.
 1. 默认 git add 的是当前本地工作区的所有已改动文件
 2. git commit -m，提交的 message 信息，默认是时间+update 字符串拼接出来的
 3. 使用 vscode 时，快捷键 control + shift + \` 默认新建一个终端，此时所在工作目录就是 git 项目的根目录，直接执行 `bash /path/of/linux-gitpush.sh` 或 `d:\windows-gitpush.bat` 即可
+4. Windows 下 `git.exe` 建议安装 `Git Bash`
 
 end.
