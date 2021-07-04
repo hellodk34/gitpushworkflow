@@ -28,9 +28,9 @@ d:\windows-gitpush.bat
 
 ----
 
-## example
+# Example
 
-### in macOS or Linux
+## in macOS or Linux
 
 this output is like this
 
@@ -65,7 +65,7 @@ the end of the workflow.
 
 ---
 
-### in Windows
+## in Windows
 
 the output is like this
 
@@ -102,7 +102,7 @@ To github.com:hellodk34/notes-2021.git
 the end of the workflow.
 ```
 
-## 注意事项
+# 注意事项
 
 1. 默认 git add 的是当前本地工作区的所有已改动文件
 2. git commit -m，提交的 message 信息，默认是时间+update 字符串拼接出来的
