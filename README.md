@@ -8,12 +8,22 @@ feature description: `git add .` and `git commit -m` and `git push` workflow
 
 > 2022-04-20 增加此部分说明
 
-个人使用 GitHub private repo 写“日记”已有两年多的历史，每天写完之后将内容 push 到 GitHub 都是一件重复繁琐的事情，于是在 10 个月之前将他们抽出来做了这个工具。便携优雅且“有仪式感”的同步 git 内容。后续我又写过两篇文章，记录了 Windows 下通过 Powershell 设置 `alias` 进一步提升这个 workflow。可以参考我写的文章
+个人使用 GitHub private repo 写“日记”已有两年多的历史（现在使用 GitHub + 自建 gitea 多端同步），每天写完之后将内容 push 到 GitHub 都是一件重复繁琐的事情，于是在 10 个月之前将他们抽出来做了这个工具。便携优雅且“有仪式感”的同步 git 内容。后续我又写过两篇文章，记录了 Windows 下通过 Powershell 设置 `alias` 进一步提升这个 workflow。可以参考我写的文章
 
 - [在 vscode 默认终端 PowerShell 快速打开当前路径下的 Git Bash 窗口](https://hellodk.cn/post/933)
 - [为 PowerShell 设置 alias](https://hellodk.cn/post/935)
 
-Linux/macOS 用户就更加简单了，设置一个 `alias` 即可，比如我习惯使用 `notepush` 这样的别名。每次写完保存后，直接输入 `notepush` 即可同步保存到远端，在另一台电脑上开始记录时先执行 `git pull` 拉取最新更新。
+Linux/macOS 用户就更加简单了，设置一个 `alias` 即可，下面以 macOS 举🌰️
+
+```
+$ vim ~/.bash_profile
+
+# 添加如下内容
+
+alias notepush="/bin/bash /Users/xxx/Downloads/linux-gitpush.sh"
+```
+
+我习惯使用 `notepush` 这个别名。每次写完保存后，直接输入 `notepush` 即可同步到远端，在另一台电脑开始记录前先执行 `git pull` 拉取最新更新。
 
 # Usage
 
