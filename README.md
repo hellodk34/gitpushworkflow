@@ -2,7 +2,7 @@
 
 feature description: `git add .` and `git commit -m` and `git push` workflow
 
-一个不是那么复杂的 `git add .`、`git commit -m 'xxx'`、`git push` 的工作流脚本工具。
+我每天在 GitHub 写自己的工作记录、生活记录，写完保存并一键推送到远程仓库。
 
 # 前言
 
